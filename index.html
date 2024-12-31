@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>今晚，整片星空将为你一人闪烁</title>
+    <style>
+      
+
+    </style>
+    <link rel="stylesheet" href="css/skystar.css">
+  </head>
+  <body>
+    <video id="videofilm" poster="img/skystar2.jpg" autoplay muted loop>
+      <audio id="backgroundAudio" src="video/晴天.mp3" preload="auto" muted autoplay loop></audio>
+      <source src="https://blog-vanh.oss-cn-hangzhou.aliyuncs.com/image/skystar.mp4" type="video/mp4">
+    </video>
+    <div class="textone">
+      <h1>致李若婷小姐的星空</h1>
+    </div>
+    <div class="texttwo">
+      <h1>look how they shine for u</h1>
+    </div>
+    <div class="textthree">
+      <h1></h1>
+    </div>
+    
+    <div class="container"></div>
+    <script src="js/skystar.js"></script>
+    <script>
+      // 确保在用户交互后播放音频
+      document.getElementById('backgroundAudio').play().catch(error => {
+        console.error('音频播放失败:', error);
+      });
+    </script>
+    
+  </body>
+</html>
